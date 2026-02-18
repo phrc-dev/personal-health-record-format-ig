@@ -46,8 +46,8 @@
 <artifact id="ValueSet/jp-phrdocument-type-vs" key="ValueSet-jp-phrdocument-type-vs" name="PHR Document Type Code ValueSet"/>
 <artifact id="CodeSystem/jp-phrdocument-type-cs" key="CodeSystem-jp-phrdocument-type-cs" name="PHR Document Type CodeSystem"/>
 <artifact deprecated="true" id="StructureDefinition/pcd-sleep-observation" key="StructureDefinition-PCDSleepObservation" name="Patient contributed data: sleep observation"/>
-<artifact deprecated="true" id="ValueSet/pcd-sleep-observation-code" key="ValueSet-PCDSleepObservationCode" name="Patient contributed data: sleep observation code"/>
-<artifact deprecated="true" id="ValueSet/pcd-sleep-observation-value" key="ValueSet-PCDSleepStageValueCode" name="Patient contributed data: sleep stage value"/>
+<artifact id="ValueSet/pcd-sleep-observation-code" key="ValueSet-PCDSleepObservationCode" name="Patient contributed data: sleep observation code"/>
+<artifact id="ValueSet/pcd-sleep-observation-value" key="ValueSet-PCDSleepStageValueCode" name="Patient contributed data: sleep stage value"/>
 <artifact deprecated="true" id="Bundle/pdr-message" key="Bundle-pdr-message" name="PatientDataReceipt Message"/>
 <artifact id="StructureDefinition/phr-attachment" key="StructureDefinition-phr-attachment" name="PhrAttachment"/>
 <artifact deprecated="true" id="StructureDefinition/PhrBundle" key="StructureDefinition-PhrBundle" name="PhrBundle"/>
