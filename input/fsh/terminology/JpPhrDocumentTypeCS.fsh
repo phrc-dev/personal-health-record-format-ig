@@ -30,6 +30,11 @@ Description: "PHR Document Type CodeSystem"
 
 * #https://w3id.org/openmhealth/schemas/omh/body-weight-2.0.json "OMH体重記録" "Open mHealth Body weight"
 * #https://w3id.org/openmhealth/schemas/omh/blood-pressure-4.0.json "OMH血圧記録" "Open mHealth Blood pressure"
+// 規格仕様書「固定文言一覧」準拠のcode（収集データ・SPAの表記に一致）
+* #https://openmhealth.org#body-weight-2.0 "OMH体重記録" "Open mHealth Body weight (体重（家庭）)"
+* #https://w3id.org/openmhealth/schemas/omh/blood-pressure-4.0 "OMH血圧記録" "Open mHealth Blood pressure (血圧（家庭）)"
+* #https://openmhealth.org#heart-rate-2.0 "OMH脈拍数" "Open mHealth Heart rate (脈拍数（家庭）)"
+* #https://w3id.org/openmhealth/schemas/omh/blood-glucose-4.0 "OMH血糖値" "Open mHealth Blood glucose (血糖値)"
 
 //スキーマ名はドメインから合成
 * #https://sagroups.ieee.org/1752/pam-subgroup#ieee-physical-activity-1.0 "IEEE歩数記録" "TODO:このスキーマ名の妥当性確認"
@@ -48,6 +53,8 @@ Description: "PHR Document Type CodeSystem"
 
 
 * #urn:oid:1.2.392.200119.6.1001#10 "特定健診情報" "健診結果報告FHIR記述仕様実装ガイド 特定健診情報"
+* #urn:oid:1.2.392.200119.6.1001#10|3 "特定健診情報 第三期" "健診結果報告FHIR記述仕様実装ガイド 特定健診情報 第三期（特定健診（マイナポータル））"
+* #urn:oid:1.2.392.200119.6.1001#10|4 "特定健診情報 第四期" "健診結果報告FHIR記述仕様実装ガイド 特定健診情報 第四期（特定健診（マイナポータル））"
 * #urn:oid:1.2.392.200119.6.1001#41 "事業者健診" "健診結果報告FHIR記述仕様実装ガイド 事業者健診"
 * #urn:oid:1.2.392.200119.6.1001#42 "自治体検診" "健診結果報告FHIR記述仕様実装ガイド 自治体検診"
 * #urn:oid:1.2.392.200119.6.1001#43 "乳幼児健診" "健診結果報告FHIR記述仕様実装ガイド 乳幼児健診"
@@ -61,3 +68,6 @@ Description: "PHR Document Type CodeSystem"
 * #https://myna.go.jp#myna-prescription-202407 "調剤歴(マイナポータル)"
 * #https://myna.go.jp#JAHISTC-08 "調剤歴(お薬手帳QRコード)"
 * #https://myna.go.jp#myna-vaccination-202407 "予防接種歴"
+
+// 検査結果（HL7 v2 ORU^R01 臨床検査結果報告メッセージ）
+* #HL7-ORU-R01 "臨床検査結果報告書(HL7)" "HL7 v2 ORU^R01 臨床検査結果報告メッセージ"
