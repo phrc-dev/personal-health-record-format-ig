@@ -12,4 +12,5 @@ Description: "Standard PHR profile of the DocumentManifest resource."
 * content 1..* MS
 * content only Reference(PhrDocumentReference)
   * ^short = "DocumentReferences for PHR related documents contained in .sphr"
+* content.reference 1..1 MS
 // * subject 1..1 MS

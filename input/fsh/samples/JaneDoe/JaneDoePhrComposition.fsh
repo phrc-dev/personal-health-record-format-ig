@@ -29,9 +29,10 @@ Usage: #inline
 * id = "jane-doe-inline"
 * active = true
 * identifier[0]
-  * system = "http://hospital.hogehoge.org/patient"
+  * system = "http://phr.or.jp/fhir/IdSystem/patient-id"
   * value = "12345"
 * name[0].use = #official
+* name[0].text = "Doe Jane"
 * name[0].family = "Doe"
 * name[0].given[0] = "Jane"
 * telecom[0].system = #phone
