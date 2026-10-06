@@ -2,6 +2,7 @@ Profile: PhrDocumentReference
 Parent: DocumentReference
 Description: "Standard PHR profile of the DocumentReference resource."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* id 1..1 MS
 // * content[*].attachment.contentType from http://terminology.hl7.org/ValueSet/media-types
 
 // * version  This is a business versionId, not a resource version id ( https://build.fhir.org/resource.html#versions
@@ -13,7 +14,7 @@ Description: "Standard PHR profile of the DocumentReference resource."
   * ^short = "We are requesting support as we may need to manage document categories subject to consent in the future."
 * date MS
   * ^short = "Document Creation Date"
-* content 1..* MS
+* content 1..1 MS
   * ^short = "DocumentReferences for PHR related documents contained in .sphr"
   * attachment only PhrAttachment
 
