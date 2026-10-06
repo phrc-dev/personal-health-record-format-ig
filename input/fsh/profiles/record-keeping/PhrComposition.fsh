@@ -3,15 +3,21 @@ Description: "Reference must point to a contained resource"
 Severity: #error
 Expression:  "reference.exists() implies reference.startsWith('#')"
 
+Invariant: phr-composition-provider-name
+Description: "Every contained Organization must have a name."
+Severity: #error
+Expression: "contained.ofType(Organization).all(name.exists())"
+
 Profile: PhrComposition
 Parent: Composition
 Description: "Standard PHR profile of the Composition resource."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* obeys phr-composition-provider-name
 * type = http://loinc.org#11503-0 "Medical records"
   * ^short = "Type code of sphr file is fixed."
 
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(PhrPatient)
 * subject obeys contained-reference-only
 * subject
   * ^short = "The patient who is the subject of the PHR"
